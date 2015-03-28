@@ -1,0 +1,8 @@
+.contain-to-grid, .top-bar, .top-bar-section ul li,
+.top-bar-section li:not(.has-form) a:not(.button){
+  background: none;
+}
+
+.fixed{
+  background-color: rgba(0,0,0,0.5);
+}
