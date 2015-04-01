@@ -3,39 +3,3 @@
   max-width:none !important;
 }
 
-@media #{$large-up} {
-
-  .contain-to-grid, .top-bar, .top-bar-section ul li,
-  .top-bar-section li:not(.has-form) a:not(.button){
-    background: none;
-  }
-
-  .top-bar {
-    z-index: 99;
-  }
-
-  .fixed{
-    background-color: rgba(0,0,0,0.5);
-  }
-
-  .front-header{
-    height: 45rem;
-  }
-
-  .l-orbit{
-    position: absolute;
-    top: 0px;
-    width: 100%;
-  }
-
-  .l-logo{
-    z-index: 90;
-    position: absolute;
-    top: 28%;
-    left: 44%;
-  }
-
-  .title-area {
-    display: none;
-  }
-}
