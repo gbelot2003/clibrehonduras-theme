@@ -2,95 +2,135 @@
 <div role="document" class="page">
 
   <!--.l-header -->
-  <header role="banner" class="l-header">
+  <header role="banner" class="l-header front-header">
+	  <?php if ($top_bar): ?>
+		  <!--.top-bar -->
 
-    <?php if ($top_bar): ?>
-      <!--.top-bar -->
-      
-      <?php if ($top_bar_classes): ?>
-        <div class="<?php print $top_bar_classes; ?>">
-      <?php endif; ?>
-      
-      <nav class="top-bar" data-topbar <?php print $top_bar_options; ?>>
-        <ul class="title-area">
-          <li class="name"><h1><?php print $linked_site_name; ?></h1></li>
-          <li class="toggle-topbar menu-icon">
-            <a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
-        </ul>
-      
-        <section class="top-bar-section">
-          <?php if ($top_bar_main_menu) : ?>
-            <?php print $top_bar_main_menu; ?>
-          <?php endif; ?>
-          <?php if ($top_bar_secondary_menu) : ?>
-            <?php print $top_bar_secondary_menu; ?>
-          <?php endif; ?>
-        </section>
-      </nav>
+		  <?php if ($top_bar_classes): ?>
+			  <div class="<?php print $top_bar_classes; ?>">
+		  <?php endif; ?>
 
-      <?php if ($top_bar_classes): ?>
-        </div>
-      <?php endif; ?>
-      <!--/.top-bar -->
-    <?php endif; ?>
+		  <nav class="top-bar" data-topbar <?php print $top_bar_options; ?>>
+			  <ul class="title-area">
+				  <li class="name"><h1><?php print $linked_site_name; ?></h1></li>
+				  <li class="toggle-topbar menu-icon">
+					  <a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
+			  </ul>
+			  <ul class="right">
+				  <!-- Search | has-form wrapper -->
+				  <li class="has-form">
+					  <div class="row collapse">
+						  <div class="large-12 small-12 columns">
+							  <input type="text" placeholder="Find Stuff">
+						  </div>
+					  </div>
+				  </li>
+			  </ul>
 
-    <!-- Title, slogan and menu -->
-    <?php if ($alt_header): ?>
-      <section class="row <?php print $alt_header_classes; ?>">
+			  <section class="top-bar-section">
+				  <?php if ($top_bar_main_menu) : ?>
+					  <?php print $top_bar_main_menu; ?>
+				  <?php endif; ?>
 
-        <?php if ($linked_logo): print $linked_logo; endif; ?>
+				  <?php if ($top_bar_secondary_menu) : ?>
+					  <?php print $top_bar_secondary_menu; ?>
+				  <?php endif; ?>
 
-        <?php if ($site_name): ?>
-          <?php if ($title): ?>
-            <div id="site-name" class="element-invisible">
-              <strong>
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-              </strong>
-            </div>
-          <?php else: /* Use h1 when the content title is empty */ ?>
-            <h1 id="site-name">
-              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-            </h1>
-          <?php endif; ?>
-        <?php endif; ?>
+			  </section>
 
-        <?php if ($site_slogan): ?>
-          <h2 title="<?php print $site_slogan; ?>" class="site-slogan"><?php print $site_slogan; ?></h2>
-        <?php endif; ?>
+		  </nav>
 
-        <?php if ($alt_main_menu): ?>
-          <nav id="main-menu" class="navigation" role="navigation">
-            <?php print ($alt_main_menu); ?>
-          </nav> <!-- /#main-menu -->
-        <?php endif; ?>
+		  <?php if ($top_bar_classes): ?>
+			  </div>
+		  <?php endif; ?>
+		  <!--/.top-bar -->
+	  <?php endif; ?>
 
-        <?php if ($alt_secondary_menu): ?>
-          <nav id="secondary-menu" class="navigation" role="navigation">
-            <?php print $alt_secondary_menu; ?>
-          </nav> <!-- /#secondary-menu -->
-        <?php endif; ?>
+	  <!-- Title, slogan and menu -->
+	  <?php if ($alt_header): ?>
+		  <section class="row <?php print $alt_header_classes; ?>">
 
-      </section>
-    <?php endif; ?>
-    <!-- End title, slogan and menu -->
+			  <?php if ($linked_logo): print $linked_logo; endif; ?>
 
-    <?php if (!empty($page['header'])): ?>
-      <!--.l-header-region -->
-      <section class="l-header-region row">
-        <div class="columns">
-          <?php print render($page['header']); ?>
-        </div>
-      </section>
-      <!--/.l-header-region -->
-    <?php endif; ?>
+			  <?php if ($site_name): ?>
+				  <?php if ($title): ?>
+					  <div id="site-name" class="element-invisible">
+						  <strong>
+							  <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+						  </strong>
+					  </div>
+				  <?php else: /* Use h1 when the content title is empty */ ?>
+					  <h1 id="site-name">
+						  <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+					  </h1>
+				  <?php endif; ?>
+			  <?php endif; ?>
+
+			  <?php if ($site_slogan): ?>
+				  <h2 title="<?php print $site_slogan; ?>" class="site-slogan"><?php print $site_slogan; ?></h2>
+			  <?php endif; ?>
+
+			  <?php if ($alt_main_menu): ?>
+				  <nav id="main-menu" class="navigation" role="navigation">
+					  <?php print ($alt_main_menu); ?>
+				  </nav> <!-- /#main-menu -->
+			  <?php endif; ?>
+
+			  <?php if ($alt_secondary_menu): ?>
+				  <nav id="secondary-menu" class="navigation" role="navigation">
+					  <?php print $alt_secondary_menu; ?>
+				  </nav> <!-- /#secondary-menu -->
+			  <?php endif; ?>
+
+		  </section>
+	  <?php endif; ?>
+	  <!-- End title, slogan and menu -->
+
+	  <!--	Orbit -->
+	  <section class="l-orbit">
+		  <ul class="example-orbit" data-orbit>
+			  <li>
+				  <img src="/clibre/sites/all/themes/clibre/images/imagen1.jpg" alt="slide 1" />
+				  <div class="orbit-caption">
+					  Caption One.
+				  </div>
+			  </li>
+			  <li class="active">
+				  <img src="http://getbootstrap.com/2.3.2/assets/img/examples/slide-02.jpg" alt="slide 2" />
+				  <div class="orbit-caption">
+					  Caption Two.
+				  </div>
+			  </li>
+			  <li>
+				  <img src="http://getbootstrap.com/2.3.2/assets/img/examples/slide-02.jpg" alt="slide 3" />
+				  <div class="orbit-caption">
+					  Caption Three.
+				  </div>
+			  </li>
+		  </ul>
+	  </section>
+	  <section class="l-logo">
+		  <img src="/clibre/sites/all/themes/clibre/images/logo2.png" alt="clibre"/>
+	  </section>
+	  <!--	Orbit -->
+
+	  <?php if (!empty($page['header'])): ?>
+		  <!--.l-header-region -->
+		  <section class="l-header-region topless">
+			  <div class="">
+				  <?php print render($page['header']); ?>
+			  </div>
+		  </section>
+		  <!--/.l-header-region -->
+	  <?php endif; ?>
 
   </header>
   <!--/.l-header -->
 
   <?php if (!empty($page['featured'])): ?>
     <!--.l-featured -->
-    <section class="l-featured row">
-      <div class="columns">
+    <section class="l-featured topless">
+      <div class="">
         <?php print render($page['featured']); ?>
       </div>
     </section>

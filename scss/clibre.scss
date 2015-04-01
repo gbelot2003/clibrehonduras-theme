@@ -87,14 +87,14 @@
 // Common file is where you place common utility classes to extend or
 // parametrics.
 // Optional.
-// @import "base/common";
+@import "base/common";
 
 // Fix for some Drupal CSS quirks (Drupalisms).
 @import "base/drupal";
 
 // Styling for elements.
 // Optional.
-// @import "base/elements";
+@import "base/elements";
 
 // Layout
 // Each section of the document has it's own partial seperated out to improve
@@ -108,7 +108,6 @@
 @import "modules/block";
 @import "modules/button";
 @import "modules/topbar";
-
 
 // States
 // @import "states/collapse";
