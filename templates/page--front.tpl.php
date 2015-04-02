@@ -78,8 +78,6 @@
 
 			  <?php if ($alt_secondary_menu): ?>
 				  <nav id="secondary-menu" class="navigation" role="navigation">
-					  <?php print $alt_secondary_menu; ?>
-				  </nav> <!-- /#secondary-menu -->
 			  <?php endif; ?>
 
 		  </section>
@@ -91,21 +89,12 @@
 		  <ul class="example-orbit" data-orbit>
 			  <li>
 				  <img src="/clibre/sites/all/themes/clibre/images/imagen1.jpg" alt="slide 1" />
-				  <div class="orbit-caption">
-					  Caption One.
-				  </div>
 			  </li>
 			  <li class="active">
 				  <img src="http://getbootstrap.com/2.3.2/assets/img/examples/slide-02.jpg" alt="slide 2" />
-				  <div class="orbit-caption">
-					  Caption Two.
-				  </div>
 			  </li>
 			  <li>
 				  <img src="http://getbootstrap.com/2.3.2/assets/img/examples/slide-02.jpg" alt="slide 3" />
-				  <div class="orbit-caption">
-					  Caption Three.
-				  </div>
 			  </li>
 		  </ul>
 	  </section>
