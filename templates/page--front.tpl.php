@@ -88,19 +88,20 @@
 	  <section class="l-orbit">
 		  <ul class="example-orbit" data-orbit>
 			  <li>
-				  <img src="/clibre/sites/all/themes/clibre/images/imagen1.jpg" alt="slide 1" />
+				  <img src="/clibre/sites/all/themes/clibre/images/slide1.jpg" alt="slide 1" />
+				  <div class="orbit-caption">hola</div>
 			  </li>
 			  <li class="active">
-				  <img src="http://getbootstrap.com/2.3.2/assets/img/examples/slide-02.jpg" alt="slide 2" />
+				  <img src="/clibre/sites/all/themes/clibre/images/slide2.jpg" alt="slide 2" />
+				  <div class="orbit-caption">hola</div>
 			  </li>
 			  <li>
 				  <img src="http://getbootstrap.com/2.3.2/assets/img/examples/slide-02.jpg" alt="slide 3" />
+				  <div class="orbit-caption">hola</div>
 			  </li>
 		  </ul>
 	  </section>
-	  <section class="l-logo">
-		  <img src="/clibre/sites/all/themes/clibre/images/logo2.png" alt="clibre"/>
-	  </section>
+
 	  <!--	Orbit -->
 
 	  <?php if (!empty($page['header'])): ?>

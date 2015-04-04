@@ -6,8 +6,9 @@
 @media #{$large-up} {
   .l-orbit{
     position: absolute;
+    z-index: 98;
     top: 0px;
     width: 100%;
+    height: 550px;
   }
-
 }

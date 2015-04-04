@@ -3,26 +3,28 @@
   .contain-to-grid, .top-bar, .top-bar-section ul li,
   .top-bar-section li:not(.has-form) a:not(.button){
     background: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    @include transition(color, .5s, ease-in);
+  }
+
+  .top-bar-section li:not(.has-form) a:not(.button):hover{
+    background-color: rgba(127, 60, 43, 0.7);
   }
 
   .top-bar {
     z-index: 99;
   }
 
-  .contain-to-grid{
+  .sticky{
     background-color: rgba(0,0,0,0.5);
+    li a{
+      text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    }
   }
 
   .front-header{
     height: 45rem;
-  }
-
-  .l-logo{
-    z-index: 90;
-    position: absolute;
-    top: 28%;
-    left: 44%;
   }
 
   .title-area {
