@@ -64,3 +64,37 @@ function clibre_preprocess_page(&$variables) {
  */
 function clibre_preprocess_node(&$variables) {
 }
+
+/**
+ * Implement function block_render to enable automaticly languages swich
+ */
+function block_render($module, $block_id) {
+	$block = block_load($module, $block_id);
+	$block_content = _block_render_blocks([$block]);
+	$build = _block_get_renderable_array($block_content);
+	$block_rendered = drupal_render($build);
+	return $block_rendered;
+}
+
+/**
+ * [clibre_form_alter description]
+ * @param  [type] &$form       [description]
+ * @param  [type] &$form_state [description]
+ * @param  [type] $form_id     [description]
+ * @return [type]              [description]
+ */
+function clibre_form_alter(&$form, &$form_state, $form_id){
+	//$form['search_block_form']['#attributes']['onblur'] = "if (this.value == '') {this.value = 'Buscar';}";
+	if ($form_id == 'search_block_form')
+	{
+		$form['search_block_form']['#attributes']['placeholder'] = t('Buscar');
+		$form['search_block_form']['#attributes']['size'] = 25;
+		$form['search_block_form']['#attributes']['title'] = t('Ingresa el texto que deseas buscar');
+		$form['actions']['#attributes']['class'][] = 'element-invisible';
+		$form['actions']['submit']['#attributes']['class'][] = '';
+		$form['actions']['submit']['#attributes']['class'][] = 'alert';
+
+		//unset($form['actions']['submit']);
+		//$form['actions']['submit'] = array('#type' => 'image_button', '#src' => base_path() . path_to_theme() . '/images/search.png');
+	}
+}

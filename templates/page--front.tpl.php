@@ -16,17 +16,14 @@
 				  <li class="toggle-topbar menu-icon">
 					  <a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
 			  </ul>
-			  <ul class="right">
-				  <!-- Search | has-form wrapper -->
+			  <ul id="search" class="right">
 				  <li class="has-form">
-					  <div class="row collapse">
-						  <div class="large-12 small-12 columns">
-							  <input type="text" placeholder="Find Stuff">
-						  </div>
-					  </div>
+					  <?php
+					  $block1 = module_invoke('search', 'block_view', 'search');
+					  print render($block1['content']);
+					  ?>
 				  </li>
-			  </ul>
-
+				  </ul>
 			  <section class="top-bar-section">
 				  <?php if ($top_bar_main_menu) : ?>
 					  <?php print $top_bar_main_menu; ?>
@@ -37,7 +34,6 @@
 				  <?php endif; ?>
 
 			  </section>
-
 		  </nav>
 
 		  <?php if ($top_bar_classes): ?>
@@ -113,7 +109,11 @@
 		  </section>
 		  <!--/.l-header-region -->
 	  <?php endif; ?>
-
+	  <!-- Logo -->
+		<section class="l-logo">
+			<a href=""><i class=""></i></a>
+		</section>
+	  <!-- Logo -->
   </header>
   <!--/.l-header -->
 
