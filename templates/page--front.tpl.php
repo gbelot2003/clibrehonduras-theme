@@ -76,7 +76,7 @@
 		  <ul class="example-orbit" data-orbit>
 			  <li>
 				  <img src="/clibre/sites/all/themes/clibre/images/slide1.jpg" alt="slide 1" />
-				  <div class="orbit-caption">hola</div>
+				  <div class="orbit-caption">Lucharemos por la libertad de expresión</div>
 			  </li>
 			  <li class="active">
 				  <img src="/clibre/sites/all/themes/clibre/images/slide2.jpg" alt="slide 2" />
@@ -101,7 +101,7 @@
 		  <!--/.l-header-region -->
 	  <?php endif; ?>
 	  <!-- Logo -->
-		<section class="l-logo show-for-large-up">
+		<section class="l-logo">
 			<a href=""><i class="icon-logo-ico"></i></a>
 		</section>
 	  <!-- Logo -->
