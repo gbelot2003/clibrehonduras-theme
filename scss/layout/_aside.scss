@@ -1,1 +1,15 @@
 // Non-modular or client styles for asides or sidebars.
+
+h2.block-title {
+    color: $orange-logo;
+    text-align: center;
+    font-size: 1.3rem;
+    border-bottom: 1px solid;
+}
+
+@media #{$medium-up} {
+  h2.block-title {
+    text-align: left;
+    font-size: 2rem;
+  }
+}

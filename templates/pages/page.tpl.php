@@ -1,4 +1,5 @@
 <!--.page -->
+<?php global $base_url; ?>
 <div role="document" class="page">
 
 	<!--.l-header -->
@@ -170,7 +171,7 @@
 
 			<?php if ($title): ?>
 				<?php print render($title_prefix); ?>
-				<h1 id="page-title" class="title"><?php print $title; ?></h1>
+				<h2 id="page-title" class="title"><?php print $title; ?></h2>
 				<?php print render($title_suffix); ?>
 			<?php endif; ?>
 
@@ -187,6 +188,18 @@
 
 			<?php print render($page['content']); ?>
 		</div>
+		<?php if (!empty($page['sidebar_first'])): ?>
+			<aside role="complementary" class="<?php print $sidebar_first_grid; ?> sidebar-first columns sidebar">
+				<?php print render($page['sidebar_first']); ?>
+			</aside>
+		<?php endif; ?>
+
+		<?php if (!empty($page['sidebar_second'])): ?>
+			<aside role="complementary" class="<?php print $sidebar_sec_grid; ?> sidebar-second columns sidebar">
+				<?php print render($page['sidebar_second']); ?>
+			</aside>
+		<?php endif; ?>
+	</main>
 		<!--/.l-main region -->
 	</main>
 	<!--/.l-main -->
@@ -215,11 +228,24 @@
 		<!--/.triptych -->
 	<?php endif; ?>
 
-	<?php if (!empty($page['content_below'])): ?>
+
 		<section id="l-content-below" class="l-content-below">
-			<?php print render($paga['content_below']) ?>
+			<div class="row">
+				<section class="block">
+					<div class="row">
+						<h2 class="block-title">Otros proyectos</h2>
+						<div class="large-4 small-6 columns"><a href="http://www.conexihon.hn" target="_blank"><img rel="logo conexihon" src="<?php  print $base_url . '/' .drupal_get_path('theme', 'clibre'); ?>/images/logos/conexihon.jpg" /></a></div>
+						<div class="large-4 small-6 columns"><a href=""><img rel="logo rapcos" src="<?php  print $base_url . '/' .drupal_get_path('theme', 'clibre'); ?>/images/logos/rapcos.jpg" /></a></div>
+						<div class="large-4 small-12 columns"><a href="http://www.elobservador.hn/" target="_blank"><img rel="logo elobservador" src="<?php print $base_url . '/' .drupal_get_path('theme', 'clibre'); ?>/images/logos/observador.jpg" /></a></div>
+					</div>
+				</section>
+				<?php if (!empty($page['content_below'])): ?>
+					<?php print render($page['content_below']) ?>
+				<?php endif ?>
+			</div>
+
 		</section>
-	<?php endif ?>
+
 
 
 	<!--.l-footer -->

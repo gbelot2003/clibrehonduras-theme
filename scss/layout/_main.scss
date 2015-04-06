@@ -9,26 +9,25 @@
 }
 
 .block-views-periodistas-asesinados-block-1{
-  h2{
-    color: $orange-logo;
-    text-align: center;
-    font-size: 1.3rem;
-    border-bottom: 1px solid;
-  }
+
   h4{
     font-size: 0.9rem;
     margin-bottom: 0.4rem;
   }
+
   p{
     font-size: 0.7rem;
   }
+
   a {
     color:#000000;
     @include transition(color, .5s, ease-in);
   }
+
   a:hover{
     color: $orange-logo;
   }
+
   .views-row{
     border-bottom: dotted 1px #808080 ;
     padding-bottom: 0.5rem;
@@ -36,8 +35,11 @@
     strong{
       color: darkred;
     }
+
   }
+
   .links {
+
     a{
       background: $orange-logo;
       padding: 10px;
@@ -45,32 +47,34 @@
       color: white;
       @include transition(color, .5s, ease-in);
     }
+
     a:hover{
       background: $blue-clibre;
     }
+
   }
+
 }
 
 .block-views-periodistas-asesinados-block{
-  h2 {
-    text-align: center;
-    font-size: 1.3rem;
-    color: $orange-logo;
-    border-bottom: 1px solid;
-  }
+
   .views-column{
     margin-bottom: 0.5rem;
     overflow: hidden;
+
     .views-field-title{
       padding: 0.3rem;
-
       font-size: 0.8rem;
       text-align: center;
+
       a{
         color: $orange-logo;
       }
+
     }
+
   }
+
   a{
     img{
       width: 100%;
@@ -96,21 +100,7 @@
 
 
 @media #{$medium-up} {
-  .block-views-periodistas-asesinados-block-1{
 
-    h2 {
-      text-align: left;
-      font-size: 2rem;
-    }
-
-  }
-
-  .block-views-periodistas-asesinados-block{
-    h2 {
-      text-align: left;
-      font-size: 2rem;
-    }
-  }
 }
 
 @media #{$large-up} {

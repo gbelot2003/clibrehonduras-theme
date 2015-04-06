@@ -1,14 +1,17 @@
 // Non-modular or client styles for .l-footer region.
 footer{
+
   background: $blue-clibre;
   padding-top: 2rem;
   height: 100%;
+
   .copyright{
     padding: 2rem 0;
     color: whitesmoke;
     text-align: center;
     text-shadow: 1px 1px 2px black;
   }
+
   .l-footer-columns{
     section{
       .more-link a{
@@ -36,5 +39,9 @@ footer{
       }
 
     }
+
+  }
+  .item-list ul li, ul.menu{
+    margin:0 auto !important;
   }
 }
