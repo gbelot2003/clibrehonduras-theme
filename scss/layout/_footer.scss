@@ -1,1 +1,40 @@
 // Non-modular or client styles for .l-footer region.
+footer{
+  background: $blue-clibre;
+  padding-top: 2rem;
+  height: 100%;
+  .copyright{
+    padding: 2rem 0;
+    color: whitesmoke;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+  }
+  .l-footer-columns{
+    section{
+      .more-link a{
+        color: antiquewhite;
+        text-shadow: 1px 1px 2px black;
+      }
+      .more-link a:hover{
+
+      }
+      h5{
+        color: white;
+      }
+      li{
+        list-style: none;
+        width: 100%;
+        border-bottom: dotted 1px whitesmoke;
+        a{
+          color: whitesmoke;
+          text-shadow: 1px 1px 2px black;
+          font-size: 0.8rem;
+        }
+        a:hover{
+         text-decoration: underline;
+        }
+      }
+
+    }
+  }
+}

@@ -2,12 +2,20 @@
   padding-top: 0 !important;
 }
 
+.top-bar ul.right li, .top-bar ul.right a,
+.top-bar ul.right li a:hover {
+  background: none !important;
+  a{
+    font-size: 2rem !important;
+  }
+}
+
 @media #{$large-up} {
 
-  .contain-to-grid, .top-bar, .top-bar-section ul li,
+  .contain-to-grid, .top-bar, .top-bar-section ul:not(.right) li,
   .top-bar-section li:not(.has-form) a:not(.button){
     background: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: whitesmoke;
     @include transition(color, .5s, ease-in);
   }
@@ -25,10 +33,6 @@
     li a{
       text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     }
-  }
-
-  .front-header{
-    height: 45rem;
   }
 
   .title-area {

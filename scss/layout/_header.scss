@@ -1,4 +1,33 @@
 // Non-modular or client styles for .l-header region.
+header{
+  background: url("../images/bg_top1.jpg") right top no-repeat rgb(60, 121, 166);
+
+  #l-top-header{
+    padding-top: 0.3rem;
+    .social {
+      a {
+        i{
+          font-size: 1.5rem;
+        }
+      }
+
+    }
+    h1{
+      font-size: 1rem;
+    }
+  }
+  .site-name{
+    i{
+      color:whitesmoke;
+      font-size:7.5rem;
+
+    }
+  }
+}
+
+.l-header {
+  position: relative;
+}
 
 .l-logo{
   display: none;

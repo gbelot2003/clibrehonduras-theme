@@ -68,13 +68,19 @@ regions[middle]              = Middle Content
 regions[content]             = Content
 regions[sidebar_first]       = Left Sidebar
 regions[sidebar_second]      = Right Sidebar
+regions[callin]              = Call In
+
 regions[triptych_first]      = Callout one
 regions[triptych_middle]     = Callout two
 regions[triptych_last]       = Callout three
+
+regions[content_below]       = Content Below
+
 regions[footer_firstcolumn]  = Footer one
 regions[footer_secondcolumn] = Footer two
 regions[footer_thirdcolumn]  = Footer three
 regions[footer_fourthcolumn] = Footer four
+
 regions[footer]              = Footer
 
 ; Various page elements output by the theme can be toggled on and off. The

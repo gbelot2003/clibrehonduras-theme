@@ -1,3 +1,13 @@
 
 $orange-logo : rgb(238, 64, 36);
 $blue-clibre : rgb(60, 120, 167);
+
+
+.facebook, .twitter, .youtube{
+  color: whitesmoke;
+}
+.facebook:hover{color: royalblue !important; text-shadow: 2px 2px 2px whitesmoke}
+
+.twitter:hover {color: #007095 !important; text-shadow: 2px 2px 2px whitesmoke}
+
+.youtube:hover {color: #8B0000 !important; text-shadow: 2px 2px 2px whitesmoke}
