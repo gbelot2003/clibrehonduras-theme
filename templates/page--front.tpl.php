@@ -4,7 +4,7 @@
   <!--.l-header -->
   <header role="banner" class="l-header front-header">
 	  <?php if ($top_bar): ?>
-		  <!--.top-bar -->
+		  <!-background: rgb(245,245,245);-.top-bar -->
 
 		  <?php if ($top_bar_classes): ?>
 			  <div class="<?php print $top_bar_classes; ?>">
@@ -28,11 +28,6 @@
 				  <?php if ($top_bar_main_menu) : ?>
 					  <?php print $top_bar_main_menu; ?>
 				  <?php endif; ?>
-
-				  <?php if ($top_bar_secondary_menu) : ?>
-					  <?php print $top_bar_secondary_menu; ?>
-				  <?php endif; ?>
-
 			  </section>
 		  </nav>
 
@@ -72,10 +67,6 @@
 				  </nav> <!-- /#main-menu -->
 			  <?php endif; ?>
 
-			  <?php if ($alt_secondary_menu): ?>
-				  <nav id="secondary-menu" class="navigation" role="navigation">
-			  <?php endif; ?>
-
 		  </section>
 	  <?php endif; ?>
 	  <!-- End title, slogan and menu -->
@@ -110,10 +101,31 @@
 		  <!--/.l-header-region -->
 	  <?php endif; ?>
 	  <!-- Logo -->
-		<section class="l-logo">
-			<a href=""><i class=""></i></a>
+		<section class="l-logo show-for-large-up">
+			<a href=""><i class="icon-logo-ico"></i></a>
 		</section>
 	  <!-- Logo -->
+
+	  <!-- First Alert -->
+	  	<section class="l-alert">
+			<div class="block">
+				<div class="view">
+					<div class="view-content">
+						<div class="section">
+							<header>
+								<h2>Titulo de alerta</h2>
+								<p>Tsexfm a as ac asc asw das da  sda sda sda sdasd
+								sdas da sda sd as da sda sd asd as da sd dsfsf</p>
+								<p>Tsexfm a as ac asc asw das da  sda sda sda sdasd
+								sdas da sda sd as da sda sd asd as da sd dsfsf</p>
+							</header>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	  <!-- First Alert -->
+
   </header>
   <!--/.l-header -->
 
