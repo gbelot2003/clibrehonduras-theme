@@ -40,6 +40,7 @@
  * @see template_process()
  */
 ?>
+
 <?php if ($block->delta != 'main'):  ?>
 	<section class="<?php print $classes; ?>"<?php print $attributes; ?>>
 <?php endif; ?>

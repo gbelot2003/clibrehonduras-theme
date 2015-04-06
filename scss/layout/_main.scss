@@ -1,1 +1,12 @@
 // Non-modular or client styles for the .l-content region.
+.block-views-periodistas-asesinados-block{
+  .views-row{
+    height: 12rem;
+    overflow: hidden;
+  }
+  a{
+    img{
+      width: 100%;
+    }
+  }
+}

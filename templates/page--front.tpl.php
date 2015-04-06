@@ -120,7 +120,7 @@
   <?php if (!empty($page['featured'])): ?>
     <!--.l-featured -->
     <section class="l-featured topless">
-      <div class="">
+      <div class="row">
         <?php print render($page['featured']); ?>
       </div>
     </section>
