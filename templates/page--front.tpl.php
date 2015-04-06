@@ -117,35 +117,45 @@
   </header>
   <!--/.l-header -->
 
-  <?php if (!empty($page['featured'])): ?>
-    <!--.l-featured -->
-    <section class="l-featured topless">
-      <div class="row">
-        <?php print render($page['featured']); ?>
-      </div>
-    </section>
-    <!--/.l-featured -->
-  <?php endif; ?>
+	<?php if (!empty($page['featured'])): ?>
+		<!--.l-featured -->
+		<section class="l-featured topless">
+		  <div class="row">
+			<?php print render($page['featured']); ?>
+		  </div>
+		</section>
+		<!--/.l-featured -->
+	<?php endif; ?>
 
-  <?php if ($messages && !$zurb_foundation_messages_modal): ?>
-    <!--.l-messages -->
-    <section class="l-messages row">
-      <div class="columns">
-        <?php if ($messages): print $messages; endif; ?>
-      </div>
-    </section>
-    <!--/.l-messages -->
-  <?php endif; ?>
+	 <?php if ($messages && !$zurb_foundation_messages_modal): ?>
+		<!--.l-messages -->
+		<section class="l-messages row">
+		  <div class="columns">
+			<?php if ($messages): print $messages; endif; ?>
+		  </div>
+		</section>
+		<!--/.l-messages -->
+	 <?php endif; ?>
 
-  <?php if (!empty($page['help'])): ?>
-    <!--.l-help -->
-    <section class="l-help row">
-      <div class="columns">
-        <?php print render($page['help']); ?>
-      </div>
-    </section>
-    <!--/.l-help -->
-  <?php endif; ?>
+	 <?php if (!empty($page['help'])): ?>
+		<!--.l-help -->
+		<section class="l-help row">
+		  <div class="columns">
+			<?php print render($page['help']); ?>
+		  </div>
+		</section>
+		<!--/.l-help -->
+	 <?php endif; ?>
+
+	<?php if (!empty($page['middle'])): ?>
+		<!--.l-help -->
+		<section class="l-middle">
+			<div class="row">
+				<?php print render($page['middle']); ?>
+			</div>
+		</section>
+		<!--/.l-help -->
+	<?php endif; ?>
 
   <!--.l-main -->
   <main role="main" class="row l-main">

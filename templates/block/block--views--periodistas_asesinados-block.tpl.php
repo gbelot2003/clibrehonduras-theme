@@ -96,7 +96,4 @@
 	<?php print $content ?>
 	<?php !empty($content_attributes) ? print '</div>' : ''; ?>
 	<hr />
-	<div>
-		<a href="#">Mas Alertas</a>
-	</div>
 	<?php $block->delta != 'main' ? print '</div>' : ''; ?>

@@ -1,8 +1,66 @@
 // Non-modular or client styles for the .l-content region.
-.block-views-periodistas-asesinados-block{
+.block-block-3{
+  margin-bottom: 3rem;
+}
+
+.l-middle{
+  padding: 3rem 0;
+  background: #fcfff4; /* Old browsers */
+  background: -moz-linear-gradient(left,  #fcfff4 0%, #edefec 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#fcfff4), color-stop(100%,#edefec)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  #fcfff4 0%,#edefec 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  #fcfff4 0%,#edefec 100%); /* Opera 11.10+ */
+  background: linear-gradient(to right,  #fcfff4 0%,#edefec 100%); /* W3C */
+}
+
+.block-views-periodistas-asesinados-block-1{
+  h2{
+    color: $orange-logo;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  h4{
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+  }
+  p{
+    font-size: 0.7rem;
+  }
+  a {
+    color:#000000;
+    @include transition(color, .5s, ease-in);
+  }
+  a:hover{
+    color: $blue-clibre;
+  }
   .views-row{
-    height: 12rem;
+    border-bottom: dotted 1px #808080 ;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    strong{
+      color: darkred;
+    }
+  }
+}
+
+.block-views-periodistas-asesinados-block{
+  h2 {
+    color: $blue-clibre;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .views-row{
+    margin-bottom: 0.5rem;
     overflow: hidden;
+    .views-field-title{
+      padding: 0.3rem;
+      background: url("../images/pap_ingres_crema.jpg") repeat;
+      font-size: 0.8rem;
+      text-align: center;
+      a{
+        color: $orange-logo;
+      }
+    }
   }
   a{
     img{
@@ -10,3 +68,7 @@
     }
   }
 }
+
+@media #{$medium-up} { }
+
+@media #{$large-up} { }
