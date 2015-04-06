@@ -2,15 +2,15 @@
 .block-block-3{
   margin-bottom: 3rem;
 }
+.l-featured{
+  blockquote{
+    border: none;
+  }
+}
 
 .l-middle{
   padding: 3rem 0;
   background: #fcfff4; /* Old browsers */
-  background: -moz-linear-gradient(left,  #fcfff4 0%, #edefec 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#fcfff4), color-stop(100%,#edefec)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left,  #fcfff4 0%,#edefec 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left,  #fcfff4 0%,#edefec 100%); /* Opera 11.10+ */
-  background: linear-gradient(to right,  #fcfff4 0%,#edefec 100%); /* W3C */
 }
 
 .block-views-periodistas-asesinados-block-1{
@@ -18,6 +18,7 @@
     color: $orange-logo;
     text-align: center;
     font-size: 1.3rem;
+    border-bottom: 1px solid;
   }
   h4{
     font-size: 0.9rem;
@@ -31,7 +32,7 @@
     @include transition(color, .5s, ease-in);
   }
   a:hover{
-    color: $blue-clibre;
+    color: $orange-logo;
   }
   .views-row{
     border-bottom: dotted 1px #808080 ;
@@ -41,20 +42,33 @@
       color: darkred;
     }
   }
+  .links {
+    a{
+      background: $orange-logo;
+      padding: 10px;
+      border-radius: 25px;
+      color: white;
+      @include transition(color, .5s, ease-in);
+    }
+    a:hover{
+      background: $blue-clibre;
+    }
+  }
 }
 
 .block-views-periodistas-asesinados-block{
   h2 {
-    color: $blue-clibre;
     text-align: center;
     font-size: 1.3rem;
+    color: $orange-logo;
+    border-bottom: 1px solid;
   }
-  .views-row{
+  .views-column{
     margin-bottom: 0.5rem;
     overflow: hidden;
     .views-field-title{
       padding: 0.3rem;
-      background: url("../images/pap_ingres_crema.jpg") repeat;
+
       font-size: 0.8rem;
       text-align: center;
       a{
@@ -69,6 +83,32 @@
   }
 }
 
-@media #{$medium-up} { }
+@media #{$medium-up} {
+  .block-views-periodistas-asesinados-block-1{
 
-@media #{$large-up} { }
+    h2 {
+      text-align: left;
+      font-size: 2rem;
+    }
+
+  }
+
+  .block-views-periodistas-asesinados-block{
+    h2 {
+      text-align: left;
+      font-size: 2rem;
+    }
+  }
+}
+
+@media #{$large-up} {
+  .l-middle{
+    background: #fcfff4; /* Old browsers */
+    background: -moz-linear-gradient(left,  #fcfff4 44%, #e0e2e0 66%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(44%,#fcfff4), color-stop(66%,#e0e2e0)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #fcfff4 44%,#e0e2e0 66%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #fcfff4 44%,#e0e2e0 66%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #fcfff4 44%,#e0e2e0 66%); /* IE10+ */
+    background: linear-gradient(to right,  #fcfff4 44%,#e0e2e0 66%); /* W3C */
+  }
+}

@@ -1,19 +1,7 @@
 // Non-modular or client styles for .l-header region.
 
 .l-logo{
-
-  top: 6%;
-  left: 30%;
-  position: absolute;
-  font-size: 5rem;
-  a{
-    color:$blue-clibre;
-    text-shadow:2px 2px 2px rgba(245,245,245,0.5);
-    @include transition(color, .5s, ease-in);
-  }
-  a:hover{
-    color:rgba(238, 64, 36, 0.7);
-  }
+  display: none;
 }
 
 .l-alert{
@@ -25,7 +13,8 @@
   }
   h3{
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: bolder;
   }
   p{
     font-size: 0.7rem;
@@ -34,8 +23,41 @@
 
 
 @media #{$medium-up} {
+  .l-logo{
+    position: absolute;
+    top: 2%;
+    left: 56%;
+    font-size: 12rem;
+    z-index: 98;
+    display: block;
+  }
+
   .l-alert{
-    background: rgb(105, 143, 186);
+    z-index: 98;
+    position: absolute;
+    top: 6%;
+    left: 10%;
+    background: rgba(245,245,245,0.5);
+    max-width: 20rem;
+    padding: 0.4rem;
+    .block-views-block-alertas-block{
+      h2{
+        color: $blue-clibre;
+        text-align: left;
+        font-size: 1.5rem;
+      }
+      h3{
+        text-align: left;
+      }
+      p{
+        font-size: 0.7rem;
+      }
+      padding: 0.2rem;
+      background: whitesmoke;
+    }
+    a{
+      color:rgb(238, 64, 36);
+    }
   }
 }
 
@@ -45,6 +67,7 @@
     left: 56%;
     font-size: 18rem;
     z-index: 98;
+    display: block;
   }
 
   .l-alert{

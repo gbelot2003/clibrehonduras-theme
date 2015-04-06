@@ -95,8 +95,8 @@
 	<?php !empty($content_attributes) ? print '<div ' .  $content_attributes . '>' : ''; ?>
 	<?php print $content ?>
 	<?php !empty($content_attributes) ? print '</div>' : ''; ?>
-	<hr />
-	<div>
-		<a href="#">Mas Alertas</a>
+	<div class="show-for-large-up">
+		<hr />
+		<a href="#l-middle"><small>Mas Alertas</small></a>
 	</div>
 	<?php $block->delta != 'main' ? print '</div>' : ''; ?>

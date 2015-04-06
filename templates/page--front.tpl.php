@@ -149,7 +149,7 @@
 
 	<?php if (!empty($page['middle'])): ?>
 		<!--.l-help -->
-		<section class="l-middle">
+		<section id="l-middle" class="l-middle">
 			<div class="row">
 				<?php print render($page['middle']); ?>
 			</div>
