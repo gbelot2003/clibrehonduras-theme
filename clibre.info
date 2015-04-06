@@ -60,6 +60,7 @@ scripts[] = js/app.min.js
 ;   <?php print render($page['header']); ?>
 
 regions[header]              = Header
+regions[alert_header]        = Alert Header
 regions[help]                = Help
 regions[highlighted]         = Highlighted
 regions[featured]            = Featured

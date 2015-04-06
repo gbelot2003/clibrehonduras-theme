@@ -2,7 +2,6 @@
 
 .l-alert{
   position: relative;
-
   padding: 0.5rem 0.8rem 0.5rem 0.5rem;
 }
 @media #{$medium-up} {
@@ -29,11 +28,12 @@
   .l-alert{
     z-index: 98;
     position: absolute;
-    top: 15%;
+    top: 22%;
     left: 16%;
     background: rgba(245,245,245,0.5);
-
-
-
+    max-width: 35rem;
+    a{
+      color:rgb(238, 64, 36);
+    }
   }
 }

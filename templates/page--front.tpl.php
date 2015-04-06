@@ -107,23 +107,11 @@
 	  <!-- Logo -->
 
 	  <!-- First Alert -->
+	  <?php if($page['alert_header']): ?>
 	  	<section class="l-alert">
-			<div class="block">
-				<div class="view">
-					<div class="view-content">
-						<div class="section">
-							<header>
-								<h2>Titulo de alerta</h2>
-								<p>Tsexfm a as ac asc asw das da  sda sda sda sdasd
-								sdas da sda sd as da sda sd asd as da sd dsfsf</p>
-								<p>Tsexfm a as ac asc asw das da  sda sda sda sdasd
-								sdas da sda sd as da sda sd asd as da sd dsfsf</p>
-							</header>
-						</div>
-					</div>
-				</div>
-			</div>
+			<?php print render($page['alert_header']) ?>
 		</section>
+	  <?php endif ?>
 	  <!-- First Alert -->
 
   </header>
