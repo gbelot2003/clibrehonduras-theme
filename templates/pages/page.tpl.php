@@ -4,14 +4,19 @@
 
 	<!--.l-header -->
 	<header role="banner" class="l-header front-header">
+
 		<div class="header-overlay">
+
 			<section id="l-top-header" class="l-top-header">
 				<div class="row">
 					<div class="small-12 large-2 columns">
 						<h1 class="text-center"><a class="site-name" href=""><i class="icon-logo-ico"></i></a></h1>
 					</div>
+
 					<div class="small-12 large-10 columns">
+
 						<div class="row">
+
 							<div class="small-6 large-12 columns">
 								<ul class="social inline-list right text-center">
 									<li><a class="" href=""><i class="icon-facebook22 facebook"></i></a></li>
@@ -19,12 +24,14 @@
 									<li><a class="" href=""><i class="icon-youtube32 youtube"></i></a></li>
 								</ul>
 							</div>
+
 							<div class="small-6 large-6 columns">
 								<?php
 								$block1 = module_invoke('search', 'block_view', 'search');
 								print render($block1['content']);
 								?>
 							</div>
+
 						</div>
 					</div>
 				</div>
@@ -233,10 +240,10 @@
 			<div class="row">
 				<section class="block">
 					<div class="row">
-						<h2 class="block-title">Otros proyectos</h2>
+						<h2 class="block-title">Otros proyectos <i class="icon-books2"></i></h2>
 						<div class="large-4 small-6 columns"><a href="http://www.conexihon.hn" target="_blank"><img rel="logo conexihon" src="<?php  print $base_url . '/' .drupal_get_path('theme', 'clibre'); ?>/images/logos/conexihon.jpg" /></a></div>
 						<div class="large-4 small-6 columns"><a href=""><img rel="logo rapcos" src="<?php  print $base_url . '/' .drupal_get_path('theme', 'clibre'); ?>/images/logos/rapcos.jpg" /></a></div>
-						<div class="large-4 small-12 columns"><a href="http://www.elobservador.hn/" target="_blank"><img rel="logo elobservador" src="<?php print $base_url . '/' .drupal_get_path('theme', 'clibre'); ?>/images/logos/observador.jpg" /></a></div>
+						<div class="large-4 medium-12 columns"><a href="http://www.elobservador.hn/" target="_blank"><img rel="logo elobservador" src="<?php print $base_url . '/' .drupal_get_path('theme', 'clibre'); ?>/images/logos/observador.jpg" /></a></div>
 					</div>
 				</section>
 				<?php if (!empty($page['content_below'])): ?>

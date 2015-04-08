@@ -1,0 +1,37 @@
+// Non-modular or client styles for asides or sidebars.
+.block-block-5{
+  .block-inner-warpper{
+    position: relative;
+
+    .inside{
+      color: darkred;
+      position: absolute;
+      top:25%;
+      left: 5%;
+      width: 90%;
+      text-align: center;
+      text-shadow: 1px 1px 1px white;
+    }
+  }
+}
+
+.block-menu-menu-mapa-de-sitio {
+  margin-bottom: 2rem;
+}
+
+.block-block-6, .block-block-6 p {
+
+  text-align: left;
+  color: white;
+  font-size: 0.8rem;
+  a {
+    color:whitesmoke;
+    text-shadow: 1px 1px 1px black;
+  }
+}
+
+@media #{$large-up} {
+  .block-block-6, .block-block-6 p {
+    text-align: right;
+  }
+}
