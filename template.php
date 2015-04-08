@@ -62,8 +62,7 @@ function clibre_preprocess_page(&$variables) {
 /**
  * Implements template_preprocess_node.
  */
-function clibre_preprocess_node(&$variables) {
-}
+
 
 /**
  * Implement function block_render to enable automaticly languages swich
