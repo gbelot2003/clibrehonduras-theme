@@ -6,7 +6,7 @@
 function clibre_preprocess_html(&$variables) {
 
 	// Add conditional CSS for IE. To use uncomment below and add IE css file
-	drupal_add_css(path_to_theme() . '/css/ie.css', ['weight' => CSS_THEME, 'browsers' => ['!IE' => FALSE], 'preprocess' => FALSE]);
+	//drupal_add_css(path_to_theme() . '/css/ie.css', ['weight' => CSS_THEME, 'browsers' => ['!IE' => FALSE], 'preprocess' => FALSE]);
 }
 
 /**
