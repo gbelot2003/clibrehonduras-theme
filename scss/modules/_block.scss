@@ -19,6 +19,32 @@
   }
 }
 
+.block-views-periodistas-asesinados-block{
+
+  .views-column{
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+
+    .views-field-title{
+      padding: 0.3rem;
+      font-size: 0.8rem;
+      text-align: center;
+
+      a{
+        color: $orange-logo;
+      }
+
+    }
+
+  }
+
+  a{
+    img{
+      width: 100%;
+    }
+  }
+}
+
 .block-menu-menu-mapa-de-sitio {
   margin-bottom: 2rem;
 }
@@ -40,6 +66,18 @@
     margin-bottom: 1rem;
   }
 }
+
+.block-views-otras-alertas-block{
+  padding-top: 1rem;
+  .view-id-otras_alertas {
+    li{
+      list-style-image: url("../images/list-style-icon.gif");
+      border-bottom: dotted 1px silver;
+    }
+    
+  }
+}
+
 
 @media #{$large-up} {
   .block-block-6, .block-block-6 p {

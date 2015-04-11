@@ -56,33 +56,6 @@
 
 }
 
-.block-views-periodistas-asesinados-block{
-
-  .views-column{
-    margin-bottom: 0.5rem;
-    overflow: hidden;
-
-    .views-field-title{
-      padding: 0.3rem;
-      font-size: 0.8rem;
-      text-align: center;
-
-      a{
-        color: $orange-logo;
-      }
-
-    }
-
-  }
-
-  a{
-    img{
-      width: 100%;
-    }
-  }
-}
-
-
 .l-callin{
   padding-top: 4rem;
   background: url("../images/slide1.jpg") no-repeat center center fixed;
@@ -97,7 +70,6 @@
     text-shadow: 2px 2px 2px #000;
   }
 }
-
 
 @media #{$medium-up} {
 
