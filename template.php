@@ -89,11 +89,10 @@ function clibre_form_alter(&$form, &$form_state, $form_id){
 		$form['search_block_form']['#attributes']['placeholder'] = t('Buscar');
 		$form['search_block_form']['#attributes']['size'] = 25;
 		$form['search_block_form']['#attributes']['title'] = t('Ingresa el texto que deseas buscar');
-		$form['actions']['#attributes']['class'][] = 'element-invisible';
-		$form['actions']['submit']['#attributes']['class'][] = '';
-		$form['actions']['submit']['#attributes']['class'][] = 'alert';
-
 		//unset($form['actions']['submit']);
+		$form['actions']['#attributes']['class'][] = 'element-invisible';
+		//$form['actions']['submit']['#attributes']['class'][] = '';
+		$form['actions']['submit']['#attributes']['class'][] = 'alert';
 		//$form['actions']['submit'] = array('#type' => 'image_button', '#src' => base_path() . path_to_theme() . '/images/search.png');
 	}
 }
