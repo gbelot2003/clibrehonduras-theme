@@ -69,15 +69,23 @@
 
 .block-views-otras-alertas-block{
   padding-top: 1rem;
+  h4.block-title{
+    color: $orange-logo !important;
+    text-decoration: underline !important;
+    width: 100%;
+  }
   .view-id-otras_alertas {
     li{
       list-style-image: url("../images/list-style-icon.gif");
+      list-style-position: outside;
       border-bottom: dotted 1px silver;
+      a{
+        font-size: 0.8rem;
+        @include transition(color, .5s, ease-in);
+      }
     }
-    
   }
 }
-
 
 @media #{$large-up} {
   .block-block-6, .block-block-6 p {

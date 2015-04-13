@@ -72,7 +72,9 @@
 }
 
 @media #{$medium-up} {
-
+  aside{
+    padding-top: 1rem;
+  }
 }
 
 @media #{$large-up} {
