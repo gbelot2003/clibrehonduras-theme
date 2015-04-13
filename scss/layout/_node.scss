@@ -15,8 +15,19 @@
   }
 }
 
-article{
-  clear: both;
-  margin-bottom: 1.5rem;
+.view-taxonomy-tipos-de-alerta {
+  .views-column {
+    clear: both;
+  }
+  article{
+    clear: both;
+    margin-bottom: 1.5rem;
+    .field-name-field--alerta-main-image {
+      display: inline;
+      float: left;
+      margin: 5px 10px 10px 0;
+    }
+  }
+
 }
 
