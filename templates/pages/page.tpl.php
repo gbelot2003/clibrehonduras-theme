@@ -10,7 +10,7 @@
 			<section id="l-top-header" class="l-top-header">
 				<div class="row">
 					<div class="small-12 large-2 columns">
-						<h1 class="text-center"><a class="site-name" href=""><i class="icon-logo-ico"></i></a></h1>
+						<?php if ($linked_logo): print $linked_logo; endif; ?>
 					</div>
 
 					<div class="small-12 large-10 columns">
