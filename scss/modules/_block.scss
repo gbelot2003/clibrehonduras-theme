@@ -74,7 +74,7 @@ aside{
     text-decoration: underline !important;
     width: 100%;
   }
-  .view-id-otras_alertas {
+  .view-id-otras_alertas, .block-menu-menu-quienes-somos- {
     li{
       list-style-image: url("../images/list-style-icon.gif");
       list-style-position: outside;
@@ -82,6 +82,9 @@ aside{
       a{
         font-size: 0.8rem;
         @include transition(color, .5s, ease-in);
+      }
+      a.active, a:hover{
+        color: darkred;
       }
     }
   }

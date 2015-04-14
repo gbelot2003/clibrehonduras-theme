@@ -1,0 +1,22 @@
+.views-exposed-widgets{
+  background: #C0C0C0 !important;
+  border-radius: 5px !important;
+  padding: 0 0 0 0.5rem !important;
+
+}
+
+.table{
+  width: 100%;
+  background: whitesmoke;
+  border: 0;
+  thead{
+    background: whitesmoke;
+    tr{
+      th{
+        background: whitesmoke;
+        border-bottom: 1px solid;
+        color: $blue-clibre !important;
+      }
+    }
+  }
+}
