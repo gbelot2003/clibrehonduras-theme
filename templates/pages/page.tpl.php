@@ -19,9 +19,9 @@
 
 							<div class="small-6 large-12 columns">
 								<ul class="social inline-list right text-center">
-									<li><a class="" href=""><i class="icon-facebook22 facebook"></i></a></li>
-									<li><a class="" href=""><i class="icon-twitter22 twitter"></i></a></li>
-									<li><a class="" href=""><i class="icon-youtube32 youtube"></i></a></li>
+									<li><a target="_blank" href="https://www.facebook.com/groups/clibrehonduras/?fref=ts"><i class="icon-facebook22 facebook"></i></a></li>
+									<li><a target="_blank" href="https://twitter.com/clibre"><i class="icon-twitter22 twitter"></i></a></li>
+									<li><a target="_blank" href="https://www.youtube.com/user/ConexihonTv"><i class="icon-youtube32 youtube"></i></a></li>
 								</ul>
 							</div>
 
@@ -235,25 +235,25 @@
 		<!--/.triptych -->
 	<?php endif; ?>
 
-
 		<section id="l-content-below" class="l-content-below">
 			<div class="row">
-				<section class="block">
-					<div class="row">
-						<h2 class="block-title">Otros proyectos <i class="icon-books2"></i></h2>
-						<div class="large-4 small-6 columns"><a href="http://www.conexihon.hn" target="_blank"><img rel="logo conexihon" src="<?php  print $base_url . '/' .drupal_get_path('theme', 'clibre'); ?>/images/logos/conexihon.jpg" /></a></div>
-						<div class="large-4 small-6 columns"><a href=""><img rel="logo rapcos" src="<?php  print $base_url . '/' .drupal_get_path('theme', 'clibre'); ?>/images/logos/rapcos.jpg" /></a></div>
-						<div class="large-4 medium-12 columns"><a href="http://www.elobservador.hn/" target="_blank"><img rel="logo elobservador" src="<?php print $base_url . '/' .drupal_get_path('theme', 'clibre'); ?>/images/logos/observador.jpg" /></a></div>
-					</div>
-				</section>
+
 				<?php if (!empty($page['content_below'])): ?>
 					<?php print render($page['content_below']) ?>
 				<?php endif ?>
+				<div class="row">
+					<section class="block large-12 columns">
+						<div class="row">
+							<h2 class="block-title">Otros proyectos <i class="icon-books2"></i></h2>
+							<div class="large-4 small-6 columns"><a href="http://www.conexihon.hn" target="_blank"><img rel="logo conexihon" src="<?php  print $base_url . '/' .drupal_get_path('theme', 'clibre'); ?>/images/logos/conexihon.jpg" /></a></div>
+							<div class="large-4 small-6 columns"><a href=""><img rel="logo rapcos" src="<?php  print $base_url . '/' .drupal_get_path('theme', 'clibre'); ?>/images/logos/rapcos.jpg" /></a></div>
+							<div class="large-4 medium-12 columns"><a href="http://www.elobservador.hn/" target="_blank"><img rel="logo elobservador" src="<?php print $base_url . '/' .drupal_get_path('theme', 'clibre'); ?>/images/logos/observador.jpg" /></a></div>
+						</div>
+					</section>
+				</div>
 			</div>
 
 		</section>
-
-
 
 	<!--.l-footer -->
 	<footer class="l-footer" role="contentinfo">
