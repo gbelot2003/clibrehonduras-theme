@@ -28,6 +28,20 @@
       margin: 5px 10px 10px 0;
     }
   }
-
 }
 
+.views-row {
+  border-bottom: 1px dotted;
+  display: table;
+  .warp{
+    .views-field-title{
+    clear: both;
+  }
+
+  .views-field-field--alerta-main-image {
+    display: inline;
+    float: left;
+    margin: 5px 10px 10px 0;
+   }
+  }
+}
